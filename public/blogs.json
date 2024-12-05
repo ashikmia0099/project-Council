@@ -1,0 +1,211 @@
+[
+    {
+      "id":1,
+      "image": "https://i.ibb.co.com/xCq5LvB/Free-Counselling-IELTS.jpg",
+      "service_name": "Free Counselling IELTS",
+      "category": "Online",
+      "description": "Our free IELTS counseling session is designed to provide students with expert guidance and advice on preparing for the IELTS exam. Learn about test patterns, effective study techniques, and valuable resources to improve your listening, speaking, reading, and writing skills. Whether you are a beginner or looking to refine your score, this session ensures you understand the essential requirements for success. With personalized tips and strategies, you'll feel more confident and ready to achieve your desired score. Don't miss this opportunity to get one step closer to studying or working abroad.",
+      "pricing": 0,
+      "duration": "5-6pm",
+      "date": "05-12-24",
+      "counselor": "John Rock",
+      "rating": 4.9,
+      "learn_more": "https://opportunities-insight.britishcouncil.org/short-articles/news/ielts-counselling-service-0",
+      "additional_info": {
+        "max_participants": 50,
+        "location": "Zoom"
+      }
+    },
+    {
+      "id":2,
+      "image": "https://i.ibb.co.com/sy4QT5D/phisology.jpg",
+      "service_name": "Online Counselling Sociology",
+      "category": "Online",
+      "description": "This sociology counseling session explores key concepts, theories, and real-world applications in the field. Our experienced counselor will help you understand the societal dynamics and how they influence human behavior. Whether you’re a student needing academic guidance or a professional interested in applying sociological principles, this session is tailored to your needs. You'll gain a deeper insight into topics such as social stratification, cultural diversity, and global issues. It's a great opportunity to expand your knowledge, ask questions, and explore potential career pathways in sociology.",
+      "pricing": 40,
+      "duration": "3-4pm",
+      "date": "06-12-24 ",
+      "counselor": "Jane Smith",
+      "rating": 4.7,
+      "learn_more": "https://www.chester.ac.uk/study/course-search/counselling-skills-and-sociology-ba-hons/g",
+      "additional_info": {
+        "max_participants": 20,
+        "location": "Google Meet"
+      }
+    },
+    {
+      "id":3,
+      "image": "https://i.ibb.co.com/G7g8VWy/business.jpg",
+      "service_name": "Management Counselling",
+      "category": "Group",
+      "description": "This management counseling session provides participants with essential tools and strategies for effective leadership and organizational growth. Led by an industry expert, the session covers core management principles, decision-making processes, and team-building techniques. Ideal for professionals and students aiming to excel in management roles, it offers real-world examples and case studies to enhance your understanding. By the end of the session, you’ll have actionable insights to apply in your academic or professional pursuits.",
+      "pricing": 70,
+      "duration": "5-6pm",
+      "date": "07-12-24",
+      "counselor": "Michael Brown",
+      "rating": 4.5,
+      "learn_more": "https://www.cmbd.org.uk/courses/management-counselling-skills",
+      "additional_info": {
+        "max_participants": 10,
+        "location": "In-Person"
+      }
+    },
+    {
+      "id":4,
+      "image": "https://i.ibb.co.com/cCfH1pw/Human-Resource-Management.jpg",
+      "service_name": "Human Resource Management",
+      "category": "Online",
+      "description": "Discover the essentials of Human Resource Management in this comprehensive counseling session. Learn about recruitment strategies, employee engagement, conflict resolution, and organizational behavior. Whether you are new to the field or looking to advance your HR career, this session is tailored to meet your needs. Gain insights into modern HR practices and trends that are shaping the workforce. Our expert counselor will guide you through case studies and real-world scenarios to help you develop practical skills and a strategic mindset.",
+      "pricing": 60,
+      "duration": "4-5pm",
+      "date": "08-12-24",
+      "counselor": "Sarah Johnson",
+      "rating": 4.6,
+      "learn_more": "https://www.techtarget.com/searchhrsoftware/definition/human-resource-management-HRM",
+      "additional_info": {
+        "max_participants": 15,
+        "location": "Zoom"
+      }
+    },
+    {
+      "id":5,
+      "image": "https://i.ibb.co.com/n7b76hw/Economics-Specialist.jpg", 
+      "service_name": "Economics Specialist",
+      "category": "Online",
+      "description": "This specialized counseling session is designed for students and professionals keen on exploring economics. From understanding micro and macroeconomics to analyzing global financial trends, this session provides you with a strong foundation in economic principles. Our experienced counselor will offer tips on academic projects, research, and career opportunities in the field of economics. You'll also gain insights into the impact of policies and economic indicators on industries and societies, making this session both educational and practical.",
+      "pricing": 55,
+      "duration": "2-3pm",
+      "date": "09-12-24",
+      "counselor": "Emily Davis",
+      "rating": 4.8,
+      "learn_more": "https://artsci.calendar.utoronto.ca/program/asspe1478",
+      "additional_info": {
+        "max_participants": 10,
+        "location": "Google Meet"
+      }
+    },
+    {
+      "id":6,
+      "image": "https://i.ibb.co.com/gSmcBnn/Information-Technology.jpg",
+      "service_name": "Information Technology ",
+      "category": "Group",
+      "description": "Explore the world of Information Technology with this focused counseling session. Learn about emerging technologies, IT career paths, and industry trends. Our counselor will guide you on certifications, job opportunities, and practical skills to thrive in the IT sector. Whether you are a student planning a tech career or a professional looking to upgrade your skills, this session will equip you with valuable insights. Discuss real-world challenges and solutions in this interactive and engaging session.",
+      "pricing": 65,
+      "duration": "3-4pm",
+      "date": "10-12-24",
+      "counselor": "David Wilson",
+      "rating": 2.7,
+      "learn_more": "https://www.techtarget.com/searchdatacenter/definition/IT",
+      "additional_info": {
+        "max_participants": 25,
+        "location": "In-Person"
+      }
+    },
+    {
+      "id":7,
+      "image": "https://i.ibb.co.com/Zdcd3nW/Free-Counselling-IELT.jpg",
+      "service_name": "Free Counselling IELTS",
+      "category": "Offline",
+      "description": "Our free IELTS counseling session is designed to provide students with expert guidance and advice on preparing for the IELTS exam. Learn about test patterns, effective study techniques, and valuable resources to improve your listening, speaking, reading, and writing skills. Whether you are a beginner or looking to refine your score, this session ensures you understand the essential requirements for success. With personalized tips and strategies, you'll feel more confident and ready to achieve your desired score. Don't miss this opportunity to get one step closer to studying or working abroad.",
+      "pricing": 0,
+      "duration": "5-6pm",
+      "date": "05-12-24",
+      "counselor": "John Doe",
+      "rating": 3.9,
+      "learn_more": "https://opportunities-insight.britishcouncil.org/short-articles/news/ielts-counselling-service-0",
+      "additional_info": {
+        "max_participants": 50,
+        "location": "Campus"
+      }
+    },
+    {
+      "id":8,
+      "image": "https://i.ibb.co.com/dDJqb4R/socilogy.jpg",
+      "service_name": "Online Counselling Sociology",
+      "category": "Group",
+      "description": "This sociology counseling session explores key concepts, theories, and real-world applications in the field. Our experienced counselor will help you understand the societal dynamics and how they influence human behavior. Whether you’re a student needing academic guidance or a professional interested in applying sociological principles, this session is tailored to your needs. You'll gain a deeper insight into topics such as social stratification, cultural diversity, and global issues. It's a great opportunity to expand your knowledge, ask questions, and explore potential career pathways in sociology.",
+      "pricing": 40,
+      "duration": "3-4pm",
+      "date": "06-12-24",
+      "counselor": "Rock Smith",
+      "rating": 4.7,
+      "learn_more": "https://www.counselling-directory.org.uk/online-counselling.html",
+      "additional_info": {
+        "max_participants": 20,
+        "location": "In-Person"
+      }
+    },
+    {
+      "id":9,
+      "image": "https://i.ibb.co.com/R6HJBy8/Management-Counsellin.jpg",
+      "service_name": "Management Counselling",
+      "category": "Offline",
+      "description": "This management counseling session provides participants with essential tools and strategies for effective leadership and organizational growth. Led by an industry expert, the session covers core management principles, decision-making processes, and team-building techniques. Ideal for professionals and students aiming to excel in management roles, it offers real-world examples and case studies to enhance your understanding. By the end of the session, you’ll have actionable insights to apply in your academic or professional pursuits.",
+      "pricing": 70,
+      "duration": "5-6pm",
+      "date": "07-12-24",
+      "counselor": "Michael Dauch",
+      "rating": 4.5,
+      "learn_more": "https://www.cmbd.org.uk/courses/management-counselling-skillg",
+      "additional_info": {
+        "max_participants": 10,
+        "location": "Campus"
+      }
+    },
+    {
+      "id":10,
+      "image": "https://i.ibb.co.com/SdXJSnm/humen-recearch.jpg>",
+      "service_name": "Human Resource Management",
+      "category": "Group",
+      "description": "Discover the essentials of Human Resource Management in this comprehensive counseling session. Learn about recruitment strategies, employee engagement, conflict resolution, and organizational behavior. Whether you are new to the field or looking to advance your HR career, this session is tailored to meet your needs. Gain insights into modern HR practices and trends that are shaping the workforce. Our expert counselor will guide you through case studies and real-world scenarios to help you develop practical skills and a strategic mindset.",
+      "pricing": 60,
+      "duration": "4-5pm",
+      "date": "08-12-24",
+      "counselor": "Barak Obama",
+      "rating": 4.6,
+      "learn_more": "https://www.coursera.org/articles/human-resource-management",
+      "additional_info": {
+        "max_participants": 15,
+        "location": "Zoom"
+      }
+    },
+    {
+      "id":11,
+      "image": "https://i.ibb.co.com/gRD673w/economy.webp",
+      "service_name": "Economics Specialist ",
+      "category": "Online",
+      "description": "This specialized counseling session is designed for students and professionals keen on exploring economics. From understanding micro and macroeconomics to analyzing global financial trends, this session provides you with a strong foundation in economic principles. Our experienced counselor will offer tips on academic projects, research, and career opportunities in the field of economics. You'll also gain insights into the impact of policies and economic indicators on industries and societies, making this session both educational and practical.",
+      "pricing": 55,
+      "duration": "2-3pm",
+      "date": "09-12-24",
+      "counselor": "Messi",
+      "rating": 4.8,
+      "learn_more": "https://artsci.calendar.utoronto.ca/program/asspe1478",
+      "additional_info": {
+        "max_participants": 10,
+        "location": "Google Meet"
+      }
+    },
+    {
+      "id":12,
+      "image": "https://i.ibb.co.com/b1RCQGW/Information-Technology.webp",
+      "service_name": "Information Technology",
+      "category": "Group",
+      "description": "Explore the world of Information Technology with this focused counseling session. Learn about emerging technologies, IT career paths, and industry trends. Our counselor will guide you on certifications, job opportunities, and practical skills to thrive in the IT sector. Whether you are a student planning a tech career or a professional looking to upgrade your skills, this session will equip you with valuable insights. Discuss real-world challenges and solutions in this interactive and engaging session.",
+      "pricing": 65,
+      "duration": "3-4pm",
+      "date": "10-12-24",
+      "counselor": "David Virat",
+      "rating": 4.7,
+      "learn_more": "Information Technology",
+      "additional_info": {
+        "max_participants": 25,
+        "location": "In-Person"
+      }
+    }
+
+  ]
+  
+
+
+
