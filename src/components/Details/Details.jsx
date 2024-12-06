@@ -15,24 +15,11 @@ import imageone from '../../assets/employ1.jpg';
 const Details = () => {
 
 
-    // "id":1,
-    //   "image": "<Image URL>",
-    //   "service_name": "Free Counselling IELTS",
-    //   "category": "Online",
-    //   "description": "Our free IELTS counseling session is designed to provide students with expert guidance and advice on preparing for the IELTS exam. Learn about test patterns, effective study techniques, and valuable resources to improve your listening, speaking, reading, and writing skills. Whether you are a beginner or looking to refine your score, this session ensures you understand the essential requirements for success. With personalized tips and strategies, you'll feel more confident and ready to achieve your desired score. Don't miss this opportunity to get one step closer to studying or working abroad.",
-    //   "pricing": 0,
-    //   "duration": "5-6pm",
-    //   "date": "05-12-24",
-    //   "counselor": "John Rock",
-    //   "rating": 4.9,
-    //   "learn_more": "https://example.com/free-ielts-counseling",
-    //   "additional_info": {
-    //     "max_participants": 50,
-    //     "location": "Zoom"
+    
 
     const data = useLoaderData()
     const backdata = data[0]
-    // console.log(typeof data.id)
+    
     const { id } = useParams();
 
     const productid = parseInt(id);

@@ -32,7 +32,6 @@ const Services = () => {
 
     }, []);
 
-    // console.log(cards)
 
 
     useEffect(() => {
@@ -47,7 +46,7 @@ const Services = () => {
                 <div className='px-10 pb-20'>
 
                     <div>
-                        <h1 className='text-[25em] text-[#F7F5E9] font-bold font-Bokor '>
+                        <h1 className='md:text-5xl lg:text-[25em] text-[#F7F5E9] font-bold font-Bokor '>
                             <span className='mx-10'>O</span>
                             <span className='mx-10'>C</span>
                             <span className='mx-10'>E</span>
@@ -56,8 +55,8 @@ const Services = () => {
                         </h1>
                     </div>
 
-                    <div className=' -mt-20'>
-                        <p className=' text-4xl font-bold text-[#A4DBC1]'>Connect Ocean Council & Change Your Life</p>
+                    <div className=' lg:-mt-20'>
+                        <p className=' lg:text-4xl font-bold text-[#A4DBC1]'>Connect Ocean Council & Change Your Life</p>
                     </div>
                 </div>
             </div>
@@ -70,7 +69,7 @@ const Services = () => {
                         <button><span className=' flex items-center font-bold text-white'> <IoIosRadioButtonOff></IoIosRadioButtonOff>Ofline</span></button>
                     </div>
                 </div>
-                <div className='  grid grid-cols-3 mx-10 gap-5'>
+                <div className='  md:grid md:grid-cols-2 lg:grid-cols-3 mx-10 gap-5'>
                     {
                         cards.map(singlecard =>
                             <div data-aos="zoom-in-down" className="card   shadow-xl col-span-1 " key={singlecard.id} cards={singlecard}>
@@ -80,10 +79,10 @@ const Services = () => {
                                         alt="Shoes" />
                                 </figure>
                                 <div className="card-body">
-                                    <h2 className="text-xl font-semibold flex items-center gap-2 text-white"> <span><MdOutlineSubtitles /></span> <span className='text-[#A4DBC1]'>{singlecard.service_name}</span> </h2>
+                                    <h2 className="md:text-lg lg:text-xl font-semibold flex items-center gap-2 text-white"> <span><MdOutlineSubtitles /></span> <span className='text-[#A4DBC1]'>{singlecard.service_name}</span> </h2>
 
                                     <div className='flex items-center justify-between text-white'>
-                                        <h6 className="card-title "> <span><CgProfile /></span><span>{singlecard.counselor}</span></h6>
+                                        <h6 className="md:text-lg flex items-center gap-3"> <span><CgProfile /></span><span>{singlecard.counselor}</span></h6>
                                         <div className=' flex items-center space-x-2 '>
                                             <span className='font-semibold '><IoTimer></IoTimer></span>
                                             <p className='font-semibold  '>{singlecard.duration}</p>
@@ -92,7 +91,7 @@ const Services = () => {
                                     <div className='flex items-center justify-between text-white'>
                                         <div className='flex text-left space-x-2 items-center'>
                                             <span><BiCategory /></span>
-                                            <p className='text-lg font-semibold'>{singlecard.category} </p>
+                                            <p className='md:text-base lg:text-lg font-semibold'>{singlecard.category} </p>
                                         </div>
                                         <div className='flex items-center gap-3'>
                                             <div className='flex text-yellow-400'>
@@ -113,7 +112,7 @@ const Services = () => {
                                             <h3 className='text-xl font-bold '> {singlecard.pricing} </h3>
                                         </div>
                                         <div>
-                                            <Link to={`details/${singlecard.id}`}><button className="btn px-14 rounded-full">Details</button></Link>
+                                            <Link to={`details/${singlecard.id}`}><button className="btn lg:px-14 rounded-full">Details</button></Link>
                                             
                                         </div>
                                     </div>

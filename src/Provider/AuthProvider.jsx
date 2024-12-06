@@ -2,7 +2,8 @@ import React, { createContext, useEffect, useState } from 'react';
 export const AuthContext = createContext();
 
 import app from '../firebase/firebase.config';
-import {  createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import {  createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { useNavigate } from 'react-router-dom';
 
 
 const auth = getAuth(app);
@@ -14,6 +15,7 @@ const AuthProvider = ({children}) => {
 
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    
 
     console.log(loading, user)
 
@@ -55,6 +57,14 @@ const AuthProvider = ({children}) => {
 
     }
 
+    // update user profile
+
+    const updateUserProfile = (updatedData) =>{
+        
+        return updateProfile(auth.currentUser, updatedData);
+
+    }
+
 
 
 
@@ -66,6 +76,8 @@ const AuthProvider = ({children}) => {
         Logout,
         SignInwithGoogle,
         loading,
+        setUser,
+        updateUserProfile,
         
         
     }

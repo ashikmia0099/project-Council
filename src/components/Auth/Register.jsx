@@ -1,12 +1,20 @@
 import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
+import { FaRegEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
+
+
+
+
 
 const Register = () => {
-    const { createnewUser, Logout } = useContext(AuthContext);
+    const { createnewUser, Logout, updateUserProfile } = useContext(AuthContext);
     const [error, setError] = useState({});
     const [passwordLength, setPasswordLength] = useState()
     const navigate = useNavigate();
+    const [showPassword, setShowPassword] = useState(false);
+
 
     const handelSubmit = (e) => {
         e.preventDefault();
@@ -40,9 +48,14 @@ const Register = () => {
 
         createnewUser(email, password)
             .then(() => {
+                
+                updateUserProfile({ displayName: name, photoURL: photourl }); 
                 return Logout();
+            
+            
             })
             .then(() => {
+                
                 navigate('/auth/login');
             })
             .catch((err) => {
@@ -97,11 +110,13 @@ const Register = () => {
                     </label>
                     <input type="email" name="email" placeholder="Email" className="input input-bordered" required />
                 </div>
-                <div className="form-control">
+                <div className="form-control relative">
                     <label className="label">
                         <span className="label-text text-white font-semibold">Password</span>
                     </label>
-                    <input type="password" name="password" placeholder="Password" className="input input-bordered" required />
+                    <input type={showPassword ? 'text' : 'password'} name="password" placeholder="Password" className="input input-bordered" required />
+                    <button onClick={() => setShowPassword(!showPassword)} className=' absolute right-4 text-xl top-12'>{showPassword ? <FaRegEye/> : <FaEyeSlash/> }</button>
+
                 </div>
                 {error.firebase && <label className="label text-red-500">{error.firebase}</label>}
                 {passwordLength && <label className="label text-red-500">{passwordLength}</label>}

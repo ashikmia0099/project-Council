@@ -39,7 +39,7 @@ const Home = () => {
                 {/* image */}
                 <div className="  bg-black ">
                     <img src={bannerimage} className='bg-cover bg-center' alt="" />
-                    <div className='grid grid-cols-3 mt-5 text-left'>
+                    <div className='lg:grid lg:grid-cols-3 mt-5 text-left'>
                         <div className='col-span-1 text-white p-5 border-r border-gray-400'>
                             <h1 className='text-[#A4DBC1] text-3xl font-semibold mb-4'>IELTS and Online Courses</h1>
                             <p className='font-semibold ml-3'>We’re offering free online IELTS preparatory program to all our registered students.</p>
@@ -56,22 +56,22 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='bg-[#2A2515] pb-28'>
-                    <div className='bg-[#F7F5E8] flex h-40 mx-auto items-center justify-center gap-9 rounded-b-full'>
-                        <button className='btn bg-black border-none text-[#A4DBC1] text-xl font-semibold w-72 hover:rounded-full hover:bg-[#6b9481] hover:text-black'><Link></Link><span>See Our Service</span> <MdMiscellaneousServices className='text-white font-extrabold' />
+                    <div className='bg-[#F7F5E8] lg:flex h-40 mx-auto  items-center justify-center gap-9 rounded-b-full'>
+                        <button className='btn bg-black border-none mt-2 text-[#A4DBC1] text-xl font-semibold w-72 hover:rounded-full hover:bg-[#6b9481] hover:text-black'><Link></Link><span>See Our Service</span> <MdMiscellaneousServices className='text-white font-extrabold' />
                         </button>
-                        <button className='btn bg-black border-none text-[#A4DBC1] text-xl font-semibold w-72 hover:rounded-full hover:bg-[#6b9481] hover:text-black'><Link></Link><span>Top Rated Super Team</span> <BsPersonGear className='text-white font-extrabold' />
+                        <button className='btn bg-black border-none mt-2 text-[#A4DBC1] text-xl font-semibold w-72 hover:rounded-full hover:bg-[#6b9481] hover:text-black'><Link></Link><span>Top Rated Super Team</span> <BsPersonGear className='text-white font-extrabold' />
                         </button>
                     </div>
                 </div>
-            </section>
+            </section>;
 
             {/* second section */}
             <section>
                 <div className='bg-[#181A1B] px-10 pb-40'>
                     <h1 className='text-7xl text-[#A4DBC1] font-semibold py-10 '>Transform Your Future Gols</h1>
-                    <div className='grid grid-cols-3 mx-auto gap-5 justify-center'>
+                    <div className='md:grid md:grid-cols-2 lg:grid-cols-3 mx-auto gap-5 justify-center'>
 
-                        <div data-aos="fade-right" className="card col-span-1 bg-base-100  shadow-xl">
+                        <div data-aos="fade-right" className="card col-span-1 bg-base-100 mt-2 shadow-xl">
                             <figure className="">
                                 <img
                                     src={imageone}
@@ -84,7 +84,7 @@ const Home = () => {
 
                             </div>
                         </div>
-                        <div data-aos="flip-left" className="card col-span-1 bg-base-100 shadow-xl">
+                        <div data-aos="flip-left" className="card col-span-1 mt-5 bg-base-100 shadow-xl">
                             <figure className="">
                                 <img
                                     src={imagetwo}
@@ -97,7 +97,7 @@ const Home = () => {
 
                             </div>
                         </div>
-                        <div data-aos="fade-left" className="card col-span-1 bg-base-100  shadow-xl">
+                        <div data-aos="fade-left" className="card mt-5 col-span-1 bg-base-100  shadow-xl">
                             <figure className="">
                                 <img
                                     src={imagethree}
@@ -122,7 +122,7 @@ const Home = () => {
                         <p className='text-white w-[60%] mx-auto font-semibold pt-10'>We are focused on the top study destinations i.e. Canada, The United Kingdom, Sweden, Netherlands, Germany, Malaysia etc. We are the authorized representative of an array of well reputed institutions with a variety of subjects from where you can complete your desired level of education.</p>
                     </div>
                     
-                    <div className='grid grid-cols-3 gap-4 mx-10 '>
+                    <div className='md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 '>
                         <div className="card col-span-1    mt-8">
                             <span className='text-9xl font-bold text-white mx-auto my-5'> <MdPsychology></MdPsychology></span>
                             <div className="card-body text-center">

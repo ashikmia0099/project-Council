@@ -1,16 +1,24 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
+import { FaRegEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 
 
 const Login = () => {
 
     const {userLogin,SignInwithGoogle, setUser} = useContext(AuthContext);
+    const [error, setError] = useState({});
+    
+    
+    const location = useLocation();
+    console.log(location)
     const navigate = useNavigate();
-    // const navigate = useNavigate();
+
+    const [showPassword, setShowPassword] = useState(false);
 
 
 
@@ -28,11 +36,12 @@ const Login = () => {
         .then((result) =>{
             const user = result.user;
             setUser(user);
-            console.log(user);
-            navigate('/services'); 
+            console.log(user); 
+            navigate(location?.state ? location.state : '/services'); 
         })
-        .catch((error) =>{
-            console.log('Error', error)
+        
+        .catch((err) =>{
+            setError({ ...error, login: err.code })
         });
     }
 
@@ -42,7 +51,7 @@ const Login = () => {
             const user = result.user
             setUser(user);
             console.log(user)
-            navigate('/services'); 
+            navigate(location?.state ? location.state : '/services');
         })
         .catch((error) =>{
             console.log('Error', error)
@@ -70,13 +79,18 @@ const Login = () => {
                     </label>
                     <input type="email" name='email' placeholder="email" className="input input-bordered" required />
                 </div>
-                <div className="form-control">
+                <div className="form-control relative">
                     <label className="label">
                         <span className="label-text text-white font-semibold">Password</span>
                     </label>
-                    <input type="password" name='password' placeholder="password" className="input input-bordered" required />
+                
+                    <input type={showPassword ? 'text' : 'password'} name='password' placeholder="password" className="input input-bordered" required />
+                    <button onClick={() => setShowPassword(!showPassword)} className=' absolute right-4 text-xl top-12'>{showPassword ? <FaRegEye/> : <FaEyeSlash/> }</button>
+                    {
+                        error.login && <label className='label text-red-700'>{error.login}</label>
+                    }
                     <label className="label">
-                        <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                        <a href="#" className="label-text-alt link link-hover text-white hover:text-white">Forgot password?</a>
                     </label>
                 </div>
                 <div className="form-control mt-6 mb-4">

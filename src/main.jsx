@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Main from './components/Main/Main.jsx';
 import Home from './components/Body/Home.jsx';
-import ContractUs from './components/Body/ContractUs.jsx';
+
 import AboutUs from './components/Body/AboutUs.jsx';
 import Auth from './components/Auth/Auth.jsx';
 import Login from './components/Auth/Login.jsx';
@@ -37,10 +37,7 @@ const router = createBrowserRouter([
         element: <PrivateRouter><Details></Details></PrivateRouter> ,
         loader : () => fetch('/blogs.json')
       },
-      {
-        path: "/contractus",
-        element: <ContractUs></ContractUs>
-      },
+      
       {
         path: "/aboutus",
         element: <AboutUs></AboutUs>

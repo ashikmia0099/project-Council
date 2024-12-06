@@ -1,33 +1,47 @@
 import React, { useContext } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
+import { CgProfile } from "react-icons/cg";
 
 const Navbar = () => {
 
 
 
 
-    const {user, Logout} = useContext(AuthContext);
-    
+    const { user, Logout } = useContext(AuthContext);
+
+    const navigate = useNavigate();
+
+
+    const handleLogout = () =>{
+        Logout()
+            .then(() =>{
+                navigate('/auth/login')
+        })
+        .catch((error) =>{
+
+            return (error)
+
+        })
+    }
+
 
     const links = (
         <>
 
-            <NavLink to='/' className={({ isActive })  =>
-                 isActive ? " border-b-4 border-[#A4DBC1] " : ""
+            <NavLink to='/' className={({ isActive }) =>
+                isActive ? " border-b-4 border-[#A4DBC1] " : ""
             }>
                 <li><p className='text-lg font-semibold'>Home</p></li>
             </NavLink>
 
-            <NavLink to='/services' className={({ isActive })  =>
-                 isActive ? " border-b-4 border-[#A4DBC1] " : ""
+            <NavLink to='/services' className={({ isActive }) =>
+                isActive ? " border-b-4 border-[#A4DBC1] " : ""
             }><li><a className='text-lg font-semibold'>Services</a></li></NavLink>
-            <NavLink to='/aboutus' className={({ isActive })  =>
-                 isActive ? " border-b-4 border-[#A4DBC1] " : ""
+            <NavLink to='/aboutus' className={({ isActive }) =>
+                isActive ? " border-b-4 border-[#A4DBC1] " : ""
             }><li><a className='text-lg font-semibold'>About Us</a></li></NavLink>
-            <NavLink to='/contractus' className={({ isActive })  =>
-                 isActive ? " border-b-4 border-[#A4DBC1] " : ""
-            }><li><a className='text-lg font-semibold'>Contract Us</a></li></NavLink>
+
 
         </>
     )
@@ -70,20 +84,48 @@ const Navbar = () => {
 
             </div>
             <div className="navbar-center hidden lg:flex">
-             
+
                 <ul className="menu menu-horizontal px-1">
                     {links}
                 </ul>
             </div>
             <div class="navbar-end">
-                {
-                    user && user?.email ? (
-                        <Link onClick={Logout}><button className="btn">Logout</button></Link>
-                    ) :(
-                        <Link to='/auth' class="text-lg font-semibold">Login / Register</Link>
-                    )
-                }
-                
+                <div>
+                    {
+                        user && user?.email ? (
+                            <div className=' gap-5 items-center flex'>
+                            <div class="dropdown dropdown-hover gap-5">
+                                <div tabindex="0" role="button" class=" m-1"> <img src={user.photoURL} className=' h-12 w-12 rounded-full' alt="" /> </div>
+                                <ul tabindex="0" class="dropdown-content menu bg-black rounded-box z-[1] w-52 p-2 shadow">
+                                    <li><a className='text-white text-lg'><span className='text-xl font-semibold'> Name: </span> {user.displayName}</a></li>
+                                    <li><a className='text-white'>{user.email} </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        ):
+                        (
+                            <div className=' gap-5 items-center flex'>
+                            <div class="dropdown dropdown-hover">
+                                <div tabindex="0" role="button" class=" m-1"><CgProfile className='text-3xl ' /></div>
+                            </div>
+                            
+                        </div>
+
+                        )
+                    }
+                </div>
+                <div>
+                    {
+                        user && user?.email ? (
+                            <Link onClick={handleLogout}><button className="btn">Logout</button></Link>
+                           
+                        ) : (
+                            <Link to='/auth' class="text-lg font-semibold">Login / Register</Link>
+                        )
+                    }
+                </div>
+
             </div>
         </div>
     );
